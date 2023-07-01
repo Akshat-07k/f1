@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.inline {
+    display: inline;
+}
+
+.roboto {
+    font-family: 'roboto';
+}
+
+.flex--row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex--column {
+    display: flex;
+    flex-direction: column;
+}
+
+table,
+tr,
+th,
+td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    padding: 1vh 1vw
+}
+
+
+.br--1 {
+    border-top: 1px solid black;
+    border-end-end-radius: 1rem;
+    border-start-start-radius: 1rem;
+}
+
+.br--2 {
+    border-right: 1px solid black;
+    border-end-start-radius: 1rem;
+    border-start-end-radius: 1rem;
+}
+
+.br--3 {
+    border-bottom: 1px solid black;
+}
+
+.br--4 {
+    border-left: 1px solid black;
+}
+
+.none {
+    display: none;
+}
+
+.block {
+    /* animation-delay: -2s; */
+    display: block;
+}
+
+.btn {
+    font-family: "Roboto";
+    font-size: 0.8rem;
+    background-color: rgb(251, 46, 46);
+    padding: 1vh 2vw;
+    color: whitesmoke;
+    margin: 1vh 1vw;
+}
+
+::placeholder {
+    color: whitesmoke;
+}
+
+
+
+/* .transition {
+    transition-delay: 1000ms;
+} */
+
+.upper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3vh 5vw;
+    border: 1px solid black;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-image: url('./check.jpeg');
+    background-size: cover; */
+    background-color: red;
+}
+
+.main {
+    color: white;
+    /* display: flex;
+    flex-direction: column; */
+    padding: 3vh 5vw;
+    background-image: url('./back.png');
+    background-size: cover;
+}
+
+.idClass {
+    padding: 1.4vh 4vw;
+    background-color: rgb(193, 48, 48);
+    font-size: 1rem;
+    border-color: white;
+    font-family: 'Roboto';
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.inputField--border {
+    border-width: 5px;
+    border-color: red;
+    background-color: rgb(76, 76, 76);
+    color: whitesmoke;
+    padding: 1vh 2vw;
+}
+
+.currentBox {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2vh 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+
+.currentBox--but1 {
+    font-family: Arial;
+    padding: 0.4vh 1vw;
+    border-radius: 1rem;
+    background-color: greenyellow;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+.historyBox {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* cursor: pointer; */
+}
+
+.historyBox--1 {
+    padding: 2vh 2vw;
+    /* border: 1px solid white; */
+}
+
+.historyBox--2 {
+    padding: 2vh 2vw;
+    /* border: 1px solid white; */
+}
+
+.historyBox--3 {
+    padding: 2vh 2vw;
+    /* border: 1px solid white; */
+}
+
+.f1--official--btn {
+    padding: 1vh 4vw;
+    background-color: red;
+    margin-left: 4vw;
+    font-size: 1.5rem;
+    font-family: cursive;
+}
+
+.driverBox {
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+
+
+/* font-family: 'Roboto',sans-serif; */
+.keyBoard--input {
+    background-color: crimson;
+    /* padding: 1vh 1vw;
+    color: whitesmoke;
+    border-radius: 1rem; */
+}
+
+.CurrentRound {
+    padding: 10vh 10vw;
+    background-color: gray;
+
+}

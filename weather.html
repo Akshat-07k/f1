@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="weather.css" />
+    <!-- <li type="stylesheet" href="./weather.css"></style> -->
+  </head>
+
+  <body>
+    
+    <div class="upper">
+      <div class="upperLeft cursor">Home🏠</div>
+      <div class="upperMiddle">F1 Querry 🏎</div>
+      <div class="ipperRight cursor">Also🔽</div>
+    </div>
+
+
+    <div class="main">
+      <br><br><br><br><br>
+      <center>
+        <button id="current" class="br--1 idClass">Current🏁</button>     
+      </center>
+      <div class=" current br--2 br--3 br--4 none inputField--border">
+        <h1>Current Season 🏁</h1>
+        <h5 style="padding-left: 6vw">Select The Querry(anyone at a time) :</h5>
+        <div class="currentBox">
+          
+          <div class="currentBox--1">
+            <h2 class="roboto currStanding--btn cursor">⭕Standings🚩</h2>
+            <div class="none currStanding">
+              <button class="btn br--1 ds cursor">Driver Standing</button><br>
+              <button class="btn br--1 cs cursor">Constructor Standing</button>
+            </div>
+            <br>
+            <!-- <select name="currentSelect">
+              <option value=""></option>
+              <option value="driverStanding">Driver Standings</option>
+              <option value="constructorStanding">Constructor Standing</option>
+            </select> -->
+          </div>
+          
+          <div class="currentBox--2">
+            <h2 class="roboto">Round Info📍</h2>
+            <input class="inputField--border keyBoard--input rs cursor" type="number" placeholder="(number)"/><br>
+            <button class="btn CurrentRound--submit cursor">Submit</button>
+          </div>
+          
+          <div class="currentBox--3">
+            <h2 class="roboto">Schedule📅</h2>  
+            <button type="submit" class="currentBox--but1">Get</button>
+          </div>
+        </div>
+      </div>
+      <br>
+      <center>
+        <button id="history" class="br--1 idClass">History 📚</button><br>
+      </center>
+      <div class="history br--2 br--3 br--4 none inputField--border">
+        <h1>History Log 📚</h1>
+        <h5 style="padding-left: 6vw">Select The Querry(anyone at a time) :</h5>
+        <br>
+        <div class="flex--row historyBox ">
+
+          <div class="historyBox--1">
+                <h1 class="historyWinner cursor">⭕Winner</h1><br>
+                <div class="none winner--driver--constructor">
+                  <button class="btn br--1" >Driver</button><br>
+                  <button class="btn br--1" >Constructor</button>
+                </div>
+          </div>
+          
+          <div class="historyBox--2">
+            <!-- <br> -->
+            <h1 class="historyStanding cursor">⭕Standings 🥈🥇🥉</h1><br>
+            <div class="none standing--driver--constructor">
+              Enter Year : <input class="inputField--border keyBoard--input">
+              
+            </div>
+          </div>
+          
+          <div class="historyBox--3">
+            <h1 class="historyQuerry cursor">⭕Custamize querry</h1><br>
+            <table class="none historyQuerry--input">
+              <tr>
+                <td>Enter Year:</td>
+                <td><input class="inputField--border keyBoard--input " type="number" placeholder="(number)"></td>
+              </tr>
+              <tr></tr>
+              <tr>
+                <td>Enter driver(if)</td>
+                <td><input class="inputField--border keyBoard--input " type="text" placeholder="(text)"></td>
+              </tr>
+              <tr></tr>
+              <tr>
+                <td>Enter Round(if)</td>
+                <td><input class="inputField--border keyBoard--input " type="number" placeholder="(number)"></td>
+              </tr>
+            </table>
+          </div>
+          <!-- <div class="historyBox--4">D</div> -->
+        </div>
+        <br><br>
+      </div>
+      <br>
+      <center>
+        <button id="driver" class="br--1 idClass">Drivers 🏌️‍♂️</button><br>
+      </center>
+      <div class="driver none inputField--border br--2 br--3 br--4">
+        <h1>Drivers 🏌️‍♂️</h1>
+        <h5 style="padding-left: 6vw">Select The Querry(anyone at a time) :</h5>
+        <br>
+        <div class="flex--row driverBox">
+              <div>
+                Enter Name : <input type="text"  placeholder="(text)" name="driverName" class="inputField--border keyBoard--input"><br><br>
+                Enter Year(if) : <input type="number"  placeholder= "(number)" name="driverName" class="inputField--border keyBoard--input"><br><br>
+                Enter Round(if) : <input type="number"  placeholder= "(number)" name="driverName" class="inputField--border keyBoard--input"><br>
+              </div>
+              <div>A</div>
+        </div>
+      </div>
+      <br>
+      <center>
+        <button id="constructor" class="br--1 idClass">Constructor</button><br>
+      </center>
+      <div class="constructor none inputField--border br--2 br--3 br--4">
+        <h1>Constructor Teams 🧰👨‍🔧</h1>
+      </div>
+      <!-- <h1>Standings </h1> -->
+      <br><br><br>
+
+      <h1 class="inline ">CheckOut F1 official Website for more Info </h1>
+      <button class="f1--official--btn br--2" onclick( window.location = "https://www.formula1.com/" )> 🌐F1 </button>
+    </div>
+
+    <div class="lower"></div>
+
+    <div class="none CurrentDriver">
+      <table class="driverTable">
+        
+        <tr>
+          <th>position </th>
+          <th>Name </th>
+          <th>Team </th>
+          <th>Points </th>
+          <th>Win </th>
+        </tr>
+        <!-- <hr> -->
+
+        </tr>
+      </table>
+    </div>
+
+    <div class="none CurrentConstructor">
+      <table class="constructorTable">
+
+        <tr>
+          <th>Position </th>
+          <th>Name</th>
+          <th>Nationality</th>
+          <th>Wins</th>
+        </tr>
+
+      </table>
+    </div>
+
+    <div class="none CurrentRound">
+      <!-- <p class="CurrentRound--Heading"> </p> -->
+      <h2>Season</h2>
+      <p class="currentSeason"></p>
+      <p class="currentDate"></p>
+      <br>
+
+      <h2>Circuit</h2>
+      <p class="currentRound"></p>
+      <p class="currentRaceName"></p>
+      <p class="currentCountry"></p>
+      <br>
+
+      <h2>Race</h2>
+        <table class="CurrentRoundTable">
+          <tr>
+            <th>position</th>
+            <th>Driver</th>
+            <th>Points</th>
+            <th>Team</th>
+            <th>Grid</th>
+            <th>Avg(kph)</th>
+            <th>Status</th>
+          </tr>
+        </table>
+      
+    </div>
+
+    <div class="none CurrentSchedule">
+        <table class="currentSchedule--Table"
+        style="padding: 10vh 20vw;">
+          <tr>
+            <th>Round</th>
+            <th>Race Name</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Circuit</th>
+            <th>Qalify(Date)</th>
+            <th>Qalify(Time)</th>
+          </tr>
+          <tr> </tr>
+        </table>
+    </div>
+
+    <script src="./weather.js"></script>
+    <script src="./current.js"></script>
+  
+  </body>
+</html>
